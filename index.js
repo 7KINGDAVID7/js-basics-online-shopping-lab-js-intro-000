@@ -21,11 +21,15 @@ function getCart() {
 }
 
 function addToCart(item) {
-  var purchase;
   var price = Math.floor(Math.random() * 101); // returns a random number between 0 and 100
-  cart.push(purchase = {item: price}); // Add the item and the price as an object.
-  console.log(`${item} had been added to your cart.`); // Print out to console.
+  var purchase = {item: price}; // Puts the item and the price as an object into the variable purchase.
+  cart.push(purchase); // Adds purchase to the cart array.
+  console.log(`${item} has been added to your cart.`); // Print out to console.
   return cart;
 }
+// <-- Math.floor(Math.random(item) * 101);
+// <-- cart.push(purchase = {item: price});
 
-// Math.floor(Math.random(item) * 101)
+function viewCart() {
+  
+}
