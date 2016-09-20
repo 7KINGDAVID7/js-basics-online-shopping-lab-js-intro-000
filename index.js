@@ -27,9 +27,9 @@ function addToCart(item) {
   console.log(`${item} has been added to your cart.`); // Print out to console.
   return cart;
 }
-// <-- Math.floor(Math.random(item) * 101);
-// <-- cart.push(purchase = {item: price});
 
 function viewCart() {
-  
+  for (var i = 0; i < getCart.length; i++) {
+    console.log(`In your cart you have ${getCart[i]}: ${cost[i]}.`);
+  }
 }
