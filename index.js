@@ -29,7 +29,17 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  for (var i = 0; i < getCart.length; i++) {
-    console.log(`In your cart you have ${getCart[i]}: ${cost[i]}.`);
+  for (var i = 0; i < getCart.length; i++) { // Gets item and price in getCart array.
+    for (var i = 0; i < cart.length; i++) { // Gets item and price in cart array.
+    console.log(`In your cart, you have ${item[i]} at ${vaules[i]}.`);
+    // Prints out the item and price of the itme
+    }
   }
 }
+
+/*
+${item.keys} at ${item.vaules}
+${item[i]} at ${item[i]}
+${getCart[item[i]]} at ${getCart[item.vaules]}
+${getCart[i]}: ${cost[i]}
+*/
