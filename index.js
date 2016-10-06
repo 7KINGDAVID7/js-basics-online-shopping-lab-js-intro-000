@@ -31,9 +31,11 @@ function addToCart(item) {
 function viewCart() {
   for (var i = 0; i < getCart.length; i++) { // Gets item and price in getCart array.
     for (var i = 0; i < cart.length; i++) { // Gets item and price in cart array.
-    console.log(`In your cart, you have ${item[i]} at ${vaules[i]}.`);
-    // Prints out the item and price of the itme
+    console.log(`In your cart, you have ${item[i]} at ${vaules[i]}.`); // Prints out the item and price of the itme
     }
+  }
+  if (viewCart = 0){
+    console.log("Your shopping cart is empty.")
   }
 }
 
